@@ -2,7 +2,7 @@
 
 ## tools required
 
-Python 3
+- Python 3
 
 ## How to run
 
