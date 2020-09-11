@@ -1,0 +1,30 @@
+{
+    "2019": [
+        {
+            "Company Code": "AB",
+            "Stock Exchange": "BSE",
+            "Price": 456.23,
+            "Date": "1-1-19"
+        },
+        {
+            "Company Code": "BC",
+            "Stock Exchange": "BSE",
+            "Price": 356.23,
+            "Date": "2-1-19"
+        }
+    ],
+    "2020": [
+        {
+            "Company Code": "BC",
+            "Stock Exchange": "BSE",
+            "Price": 456.23,
+            "Date": "1-1-20"
+        },
+        {
+            "Company Code": "CD",
+            "Stock Exchange": "BSSE",
+            "Price": 356.23,
+            "Date": "2-1-20"
+        }
+    ]
+}
