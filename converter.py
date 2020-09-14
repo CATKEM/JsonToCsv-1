@@ -4,16 +4,19 @@ import csv
 with open('data.json') as json_file: 
     json_data = json.load(json_file)
 
+bdrId = json_data["classifications"][0]["bdrId"]
+classifications = json_data["classifications"][0]["classifications"]
+
 for worksheet in json_data:
-    out_file = open(worksheet+'.csv', 'w')
+    out_file = open(bdrId+'.csv', 'w', newline='\n', encoding='utf-8')
     csv_writer = csv.writer(out_file)
     headers_written = False
     
-    for stock_data in json_data[worksheet]:
+    for classification in classifications:
         if not headers_written:
-            headers = stock_data.keys()
+            headers = classification.keys()
             csv_writer.writerow(headers)
             headers_written = True
-        csv_writer.writerow(stock_data.values())
+        csv_writer.writerow(classification.values())
 
     out_file.close()
